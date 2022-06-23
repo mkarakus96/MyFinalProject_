@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 namespace DataAccess.Abstract
 {
-    public interface IEntityRepository<T>
+    public interface IEntityRepository<T>//ben buradaki girilecek parametreyi sınırlamak isterim. Yazılımcı yanlışlıkla int yazmasın.
     {
         List<T> GetAll(Expression<Func<T,bool>>filter=null);
 
